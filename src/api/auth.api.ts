@@ -7,7 +7,7 @@ export interface LoginPayload {
 
 export const authApi = {
   login(data: LoginPayload) {
-    // Backend mounts under /api/users/login
-    return axiosClient.post("/users/login", data, { skipAuth: true });
+    // Backend mounts under /api/auth/login
+    return axiosClient.post("/auth/login", data, { skipAuth: true });
   },
 };
